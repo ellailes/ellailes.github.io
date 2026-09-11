@@ -4,7 +4,7 @@ title: About Me
 permalink: /about/
 ---
 
-I'm a PhD student in Astronomy at the Center for Astrophysics | Harvard &
+I'm a PhD student in Astronomy at the Center for Astrophysics &#124; Harvard &
 Smithsonian, where I work on fast radio bursts and what they can tell us about
 the baryon content of the universe.
 
@@ -24,7 +24,7 @@ large cosmological surveys at the same time.
 
 ## Background
 
-- **PhD, Astronomy** &mdash; Center for Astrophysics | Harvard & Smithsonian, 2026&ndash;present
+- **PhD, Astronomy** &mdash; Center for Astrophysics &#124; Harvard & Smithsonian, 2026&ndash;present
 - **BSc, Honours Physics** &mdash; McGill University, 2021&ndash;2025
   <br>Honours thesis: *Dark Photon and Axion Production in Magnetized White Dwarfs*, supervised by Katelin Schutz
 
