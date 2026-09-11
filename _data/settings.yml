@@ -7,15 +7,16 @@ disqus:
 google-ID: ''
 
 menu:
-- {name: 'About Me',  url: 'about'}
-- {name: 'Research', url: 'research'}
-- {name: 'Adventure',       url: 'adventure'}
-- {name: 'CV',      url: 'cv'}
-
+- {name: 'About Me',  url: 'about/'}
+- {name: 'Research',  url: 'research/'}
+- {name: 'Adventure', url: 'adventure/'}
+- {name: 'CV',        url: 'cv/'}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
 social:
-# - {icon: 'linkedin', link:    'https://www.linkedin.com/in/ella-iles-988460268/'}
+- {icon: 'envelope',  link: 'mailto:eiles@g.harvard.edu'}
+- {icon: 'github',    link: 'https://github.com/ellailes'}
+- {icon: 'linkedin',  link: 'https://www.linkedin.com/in/ella-iles-988460268/'}
 
 # - {icon: 'rss-square', link: 'rss-feed.xml'}
 

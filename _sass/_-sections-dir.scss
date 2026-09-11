@@ -1,10 +1,12 @@
 // Importing Sass/SCSS partials from `sass_dir` (defaults to `_sass`)
 @import "base",
         "code",
+        "cv",
         "default",
         "footer",
         "header",
         "home",
+        "intro",
         "page",
         "post",
         "social-icons";

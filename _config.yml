@@ -1,18 +1,26 @@
 # Site Build Settings
 
-# jekyll-paginate configuration
-paginate:            0
-
 # Build settings
 markdown:            kramdown
 highlighter:         rouge
 permalink:           /:title
-plugins:             [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
+plugins:             [jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
 
-# Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
-title:		           "Ella Iles"
-description:	       "Personal Website"
+# Site identity (also used by jekyll-seo-tag and the atom feed)
+title:               "Ella Iles"
+description:         "Astrophysics PhD student — fast radio bursts and cosmology"
 author:              "Ella Iles"
+url:                 "https://ellailes.github.io"
+baseurl:             ""
+
+# Don't copy these into the built site
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - millennial.gemspec
+  - README.md
+  - LICENSE.md
+  - vendor
 
 # RSS 2.0 can be used instead of Atom by uncommenting following two lines
 #feed:

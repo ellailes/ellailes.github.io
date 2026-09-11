@@ -1,0 +1,52 @@
+/*
+  CV page (cv.html) — embedded PDF viewer.
+  Deliberately wider than `.page-content`, which caps prose at 600px; a Letter
+  page at that width is too small to read.
+*/
+
+.cv-page {
+  max-width: 900px;
+  margin: 10px auto 30px;
+  padding: 0 10px;
+}
+
+.cv-header h1 {
+  margin-bottom: 0;
+}
+
+.cv-actions {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  color: #666;
+}
+
+.cv-embed {
+  display: block;
+  width: 100%;
+  /* Letter is 612x792pt; a little taller than one page so the viewer's own
+     scrollbar and toolbar don't crop the first page. */
+  height: 85vh;
+  min-height: 500px;
+  border: 1px solid #e0e0e0;
+}
+
+.cv-fallback {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Only surfaced on small screens, where the inline viewer is hidden */
+.cv-mobile-note {
+  display: none;
+}
+
+@media (max-width: $tablet-width) {
+  /* Mobile browsers mostly render an inline PDF as a blank box, so show a
+     link instead of an empty frame. */
+  .cv-embed {
+    display: none;
+  }
+  .cv-mobile-note {
+    display: block;
+  }
+}

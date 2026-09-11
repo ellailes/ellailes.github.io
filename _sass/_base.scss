@@ -40,6 +40,11 @@ h4, h5, h6 {
 /* Body */
 body {
   font-family: $base-font-family;
+  /* Set explicitly so the site stays readable in dark-mode browsers, which
+     would otherwise paint a dark canvas behind the theme's black text. */
+  color-scheme: light;
+  background-color: white;
+  color: black;
 }
 body img {
   align: middle;
