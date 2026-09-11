@@ -1,7 +1,7 @@
 # Site Build Settings
 
 # jekyll-paginate configuration
-paginate:            4
+paginate:            0
 
 # Build settings
 markdown:            kramdown
@@ -11,7 +11,7 @@ plugins:             [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-t
 
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
 title:		           "Ella Iles"
-description:	       "Ella Iles' Personal Website"
+description:	       "Personal Website"
 author:              "Ella Iles"
 
 # RSS 2.0 can be used instead of Atom by uncommenting following two lines
