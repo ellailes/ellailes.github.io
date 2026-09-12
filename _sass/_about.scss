@@ -2,22 +2,26 @@
   Home / About Me page (index.html) — photo and contact note beside the bio.
 */
 
+.about-page {
+  max-width: 940px;
+  margin: 10px auto 40px;
+  padding: 0 10px;
+}
+
 .about {
   display: flex;
   align-items: flex-start;
   gap: 40px;
-  max-width: 860px;
-  margin: 30px auto 40px;
-  padding: 0 10px;
+  margin-top: 20px;
 }
 
 .about-aside {
-  flex: 0 0 280px;
+  flex: 0 0 360px;
 }
 
 /* Override the global `body img` rule, which centres and caps at 600px */
 .about-photo {
-  width: 280px;
+  width: 360px;
   max-width: 100%;
   margin: 0;
   display: block;
