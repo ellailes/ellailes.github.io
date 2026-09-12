@@ -7,7 +7,7 @@ disqus:
 google-ID: ''
 
 menu:
-- {name: 'About Me',  url: 'about/'}
+# 'About Me' is the home page, reached by clicking the site title
 - {name: 'Research',  url: 'research/'}
 - {name: 'Adventure', url: 'adventure/'}
 - {name: 'CV',        url: 'cv/'}
