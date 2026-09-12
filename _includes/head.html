@@ -4,8 +4,9 @@
   <link rel="icon" href="data:,">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
-  <link rel="stylesheet" href="{{ site.github.url }}/assets/css/main.css">
-  <link rel="stylesheet" href="{{ site.github.url }}/assets/css/syntax.css">
+  <!-- ?v=<build time> so a rebuilt stylesheet isn't served from browser cache -->
+  <link rel="stylesheet" href="{{ site.github.url }}/assets/css/main.css?v={{ site.time | date: '%s' }}">
+  <link rel="stylesheet" href="{{ site.github.url }}/assets/css/syntax.css?v={{ site.time | date: '%s' }}">
   <!-- Use Atom -->
   {% feed_meta %}
   <!-- RSS-v2.0
