@@ -8,7 +8,7 @@ plugins:             [jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
 
 # Site identity (also used by jekyll-seo-tag and the atom feed)
 title:               "Ella Iles"
-description:         "Astrophysics PhD student — fast radio bursts and cosmology"
+description:         "Personal Website"
 author:              "Ella Iles"
 url:                 "https://ellailes.github.io"
 baseurl:             ""
