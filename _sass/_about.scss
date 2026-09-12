@@ -12,7 +12,6 @@
   display: flex;
   align-items: flex-start;
   gap: 40px;
-  margin-top: 20px;
 }
 
 .about-aside {
@@ -39,9 +38,14 @@
   min-width: 0;
 }
 
-/* The bio's first paragraph shouldn't be pushed below the top of the photo */
-.about-bio p:first-child {
+/* The heading sits in this column, so pull it flush with the top of the photo
+   (.content-wrapper h1 otherwise adds a 20px top margin). */
+.about-bio > :first-child {
   margin-top: 0;
+}
+
+.about-bio h1 {
+  margin-bottom: 0.75rem;
 }
 
 @media (max-width: $tablet-width) {
