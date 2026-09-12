@@ -43,7 +43,7 @@ body {
   /* Set explicitly so the site stays readable in dark-mode browsers, which
      would otherwise paint a dark canvas behind the theme's black text. */
   color-scheme: light;
-  background-color: white;
+  background-color: $background-color;
   color: black;
 }
 body img {
