@@ -1,11 +1,7 @@
 <head>
-  <title>
-    {% if page.title == "Home" %}
-      {{ site.title }} | {{ site.description }}
-    {% else %}
-      {{ page.title }} | {{ site.title }}
-    {% endif %}
-  </title>
+  <title>{{ site.title }}</title>
+  <!-- No favicon: an empty data URI stops the browser requesting /favicon.ico -->
+  <link rel="icon" href="data:,">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
   <link rel="stylesheet" href="{{ site.github.url }}/assets/css/main.css">
@@ -25,6 +21,7 @@
   </script>
   <!-- Google Analytics -->
   {% include google-analytics.html %}
-  <!-- Use Jekyll SEO plugin -->
-  {% seo %}
+  <!-- Use Jekyll SEO plugin. title=false stops it emitting a second <title>,
+       which would otherwise compete with the one above. -->
+  {% seo title=false %}
 </head>
