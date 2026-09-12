@@ -1,0 +1,56 @@
+/*
+  Home / About Me page (index.html) — photo and contact note beside the bio.
+*/
+
+.about {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 860px;
+  margin: 30px auto 40px;
+  padding: 0 10px;
+}
+
+.about-aside {
+  flex: 0 0 280px;
+}
+
+/* Override the global `body img` rule, which centres and caps at 600px */
+.about-photo {
+  width: 280px;
+  max-width: 100%;
+  margin: 0;
+  display: block;
+}
+
+.about-contact {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+.about-bio {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+/* The bio's first paragraph shouldn't be pushed below the top of the photo */
+.about-bio p:first-child {
+  margin-top: 0;
+}
+
+@media (max-width: $tablet-width) {
+  .about {
+    display: block;
+  }
+  .about-aside {
+    margin-bottom: 25px;
+  }
+  .about-photo {
+    margin: 0 auto;
+  }
+  .about-contact {
+    text-align: center;
+  }
+}
