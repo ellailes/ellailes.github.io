@@ -4,4 +4,4 @@ title: Research
 permalink: /research/
 ---
 
-In process.
+In progress.
