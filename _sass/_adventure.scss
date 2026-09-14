@@ -51,11 +51,14 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
-/* Two-photo trips: side by side, full block height. Taller cells than any
-   other layout, which is what lets a portrait photo keep about half its
-   height instead of the quarter a full-width cell would leave. */
+/* Two-photo trips: side by side, full block height.
+
+   The second column is sized to the second photo's own 4:3 ratio at this
+   height, so that photo is never cropped horizontally. The first column takes
+   whatever is left — narrower, which means a portrait photo there keeps more
+   of its height (65% rather than the 52% equal columns gave). */
 .trip-block--duo {
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr calc(430px * 4 / 3);
   grid-auto-rows: 430px;
 }
 
