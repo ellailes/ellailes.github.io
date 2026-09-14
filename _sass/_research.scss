@@ -20,7 +20,7 @@
   /* Figure and its citation sit centred against the height of the text */
   align-items: center;
   gap: 40px;
-  margin-top: 55px;
+  margin-top: 90px;
 }
 
 /* Second project sits image-right, so the page reads left / right / left.
@@ -60,7 +60,7 @@
 @media (max-width: $tablet-width) {
   .project {
     display: block;
-    margin-top: 40px;
+    margin-top: 60px;
   }
   .project-media {
     margin-bottom: 20px;
