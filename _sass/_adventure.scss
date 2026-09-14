@@ -96,9 +96,11 @@
   .trip-photo--wide {
     grid-column: auto;
   }
-  /* Odd photo counts leave a hole in a 2-column grid, so let the last one
-     run full width. An even count already fills. */
-  .trip-block:not(.trip-block--pairs) .trip-photo:last-of-type {
+  /* An odd number of photos leaves a hole in a 2-column grid, so let the last
+     one run full width. `:last-of-type:nth-of-type(odd)` matches only when the
+     final photo's index is odd, i.e. only when the count is odd — an even
+     count already fills the rows, and spanning there would create the hole. */
+  .trip-photo:last-of-type:nth-of-type(odd) {
     grid-column: span 2;
   }
   .trip-caption {
