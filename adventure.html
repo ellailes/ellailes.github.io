@@ -16,32 +16,13 @@ permalink: /adventure/
     and took a lot of the pictures shown.
   </p>
 
-  <h2>Working Trips</h2>
-
-  <!--
-    TRIP TEMPLATE — one <section> per trip. The sentence sits above its strip.
-
-    Each <a> carries an inline flex-grow equal to that photo's aspect ratio
-    (width / height). That makes every photo in a strip share the same height
-    while keeping its own proportions, and the strip fills the full width.
-
-  <section class="trip">
-    <p class="trip-caption">One sentence about the trip.</p>
-    <div class="trip-strip">
-      <a style="flex-grow: 1.50" href="{{ site.github.url }}/assets/img/trip-x-1.jpg" target="_blank" rel="noopener">
-        <img src="{{ site.github.url }}/assets/img/trip-x-1.jpg" alt="">
-      </a>
-      <a style="flex-grow: 0.67" href="{{ site.github.url }}/assets/img/trip-x-2.jpg" target="_blank" rel="noopener">
-        <img src="{{ site.github.url }}/assets/img/trip-x-2.jpg" alt="">
-      </a>
-    </div>
-  </section>
-  -->
-
   <!--
     TRIP BLOCK — photos tile edge to edge with the caption laid over them.
-    Five photos fill two rows because the fourth spans two columns
-    (.trip-photo--wide); change that if a trip has a different count.
+    The grid must come out full, or a cell of page background shows through:
+      5 photos — 3 columns, with one carrying .trip-photo--wide to span two
+      4 photos — add .trip-block--pairs for a 2x2
+    The caption sits bottom-left, so put a dark photo in that corner; white
+    text over a bright one is unreadable.
   -->
   <section class="trip">
     <div class="trip-block">
@@ -83,9 +64,5 @@ permalink: /adventure/
       <p class="trip-caption">26 days on the Kattawagami River</p>
     </div>
   </section>
-
-  <h2>Personal Trips</h2>
-
-  <p class="adventure-pending">In progress.</p>
 
 </div>

@@ -15,12 +15,10 @@
   margin-top: 0;
 }
 
-.adventure-page > h2 {
-  margin-top: 55px;
-}
-
+/* No section headings separate the trips any more, so the gap between blocks
+   is what tells them apart. */
 .trip {
-  margin-top: 30px;
+  margin-top: 45px;
 }
 
 /*
@@ -47,11 +45,10 @@
   grid-column: span 2;
 }
 
-/* Four-photo trips: 2x2. Taller rows keep the wider cells close to the 3:2
-   shape of the photos, so little is lost to cropping. */
+/* Four-photo trips: 2x2. Row height is inherited from .trip-block rather than
+   set here, so every two-row trip comes out the same overall height. */
 .trip-block--pairs {
   grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: 300px;
 }
 
 /* Override the global `body img` rule, which centres and caps at 600px.
@@ -89,18 +86,11 @@
   pointer-events: none;
 }
 
-.adventure-pending {
-  color: #555;
-}
-
 @media (max-width: $tablet-width) {
   /* Three across is unreadably small on a phone, so drop to two columns and
      let the last photo run full width. Still gapless. */
   .trip-block {
     grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 140px;
-  }
-  .trip-block--pairs {
     grid-auto-rows: 140px;
   }
   .trip-photo--wide {
