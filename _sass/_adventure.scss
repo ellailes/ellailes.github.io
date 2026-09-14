@@ -87,6 +87,12 @@
   object-position: 50% 35%;
 }
 
+/* A gentler version of --focus-bottom: enough to bring a subject sitting low
+   in the frame fully into the cell, without giving up the top of the picture */
+.trip-photo--focus-lower img {
+  object-position: 50% 70%;
+}
+
 /* Override the global `body img` rule, which centres and caps at 600px.
    max-width matters here: the spanning cell is wider than 600px, and without
    this the photo stops short of filling it and leaves a strip of background. */
