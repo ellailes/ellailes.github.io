@@ -3,7 +3,9 @@
 */
 
 .research-page {
-  max-width: 940px;
+  /* Wider than .about-page so the figures can be larger without squeezing
+     the text column below a readable measure. */
+  max-width: 1060px;
   /* Matches .about-page: ~2 lines of body text below the fixed header */
   margin: 62px auto 40px;
   padding: 0 10px;
@@ -15,9 +17,10 @@
 
 .project {
   display: flex;
-  align-items: flex-start;
+  /* Figure and its citation sit centred against the height of the text */
+  align-items: center;
   gap: 40px;
-  margin-top: 45px;
+  margin-top: 55px;
 }
 
 /* Second project sits image-right, so the page reads left / right / left.
@@ -27,7 +30,7 @@
 }
 
 .project-media {
-  flex: 0 0 340px;
+  flex: 0 0 440px;
 }
 
 /* Override the global `body img` rule, which centres and caps at 600px */
@@ -37,8 +40,8 @@
   display: block;
 }
 
-.project-caption {
-  margin-top: 0.6rem;
+.project-links {
+  margin-top: 0.9rem;
   font-size: 0.85rem;
   line-height: 1.5;
   color: #555;
@@ -50,22 +53,14 @@
   min-width: 0;
 }
 
-/* Pull the project heading level with the top of its image */
 .project-text > :first-child {
   margin-top: 0;
-}
-
-.project-links {
-  margin-top: 0.9rem;
-  font-size: 0.9rem;
-  line-height: 1.5;
-  color: #555;
 }
 
 @media (max-width: $tablet-width) {
   .project {
     display: block;
-    margin-top: 35px;
+    margin-top: 40px;
   }
   .project-media {
     margin-bottom: 20px;
