@@ -9,42 +9,10 @@ permalink: /research/
 
   <div class="projects">
 
-    <!-- Images alternate left / right / left via CSS; don't reorder the markup.
-         Each figure links to its full-size file, since detail like axis labels
-         is unreadable at the 340px display width. -->
-
-    <section class="project">
-      <div class="project-media">
-        <a href="{{ site.github.url }}/assets/img/project-lim.jpg" target="_blank" rel="noopener">
-          <img src="{{ site.github.url }}/assets/img/project-lim.jpg"
-               alt="Simulated line intensity mapping field showing filamentary large-scale structure">
-        </a>
-      </div>
-      <div class="project-text">
-        <h2>Novel Statistical Estimators for Line Intensity Mapping</h2>
-        <p>
-          Line intensity mapping (LIM) uses spectral lines emitted from galaxies
-          and other regions as a way to learn about matter in the universe at a
-          variety of redshifts. The auto power spectrum of these spectral lines is
-          a useful quantity but the data is often limited by instrumental noise,
-          residual foregrounds, and systematics. Cross-power spectra between
-          multiple lines offer a robust alternative to infer the auto power
-          spectrum. Inferring the auto spectrum from cross-correlations relies on
-          two key assumptions: that all tracers are linearly biased with respect
-          to the matter density field, and that they are strongly mutually
-          correlated. In this work we introduced a new diagnostic statistic,
-          <strong>Q</strong>, built from combinations of cross-spectra between
-          four different spectral lines, which serves as a data-driven null test
-          of those assumptions. We validated it on both analytic toy models and
-          simulations of LIM observables across a range of redshifts and noise. We
-          found that the criterion Q&nbsp;&approx;&nbsp;1 reliably selects the
-          regions where cross-spectrum estimators are valid, while significant
-          deviations indicate that the key assumptions have been violated. This
-          gives astronomers a convenient way to define the scale cuts and redshift
-          ranges over which these reconstructions can be trusted.
-        </p>
-      </div>
-    </section>
+    <!-- Images alternate left / right / left by position, so reordering these
+         sections re-stripes them automatically. Each figure links to its
+         full-size file, since detail like axis labels is unreadable at the
+         340px display width. -->
 
     <section class="project">
       <div class="project-media">
@@ -106,6 +74,39 @@ permalink: /research/
           as &sim;10<sup>&minus;3</sup> &mdash; meaning these experiments are
           sensitive to MCPs even when they are a tiny sub-fraction of the dark
           matter.
+        </p>
+      </div>
+    </section>
+
+    <section class="project">
+      <div class="project-media">
+        <a href="{{ site.github.url }}/assets/img/project-lim.jpg" target="_blank" rel="noopener">
+          <img src="{{ site.github.url }}/assets/img/project-lim.jpg"
+               alt="Simulated line intensity mapping field showing filamentary large-scale structure">
+        </a>
+      </div>
+      <div class="project-text">
+        <h2>Novel Statistical Estimators for Line Intensity Mapping</h2>
+        <p>
+          Line intensity mapping (LIM) uses spectral lines emitted from galaxies
+          and other regions as a way to learn about matter in the universe at a
+          variety of redshifts. The auto power spectrum of these spectral lines is
+          a useful quantity but the data is often limited by instrumental noise,
+          residual foregrounds, and systematics. Cross-power spectra between
+          multiple lines offer a robust alternative to infer the auto power
+          spectrum. Inferring the auto spectrum from cross-correlations relies on
+          two key assumptions: that all tracers are linearly biased with respect
+          to the matter density field, and that they are strongly mutually
+          correlated. In this work we introduced a new diagnostic statistic,
+          <strong>Q</strong>, built from combinations of cross-spectra between
+          four different spectral lines, which serves as a data-driven null test
+          of those assumptions. We validated it on both analytic toy models and
+          simulations of LIM observables across a range of redshifts and noise. We
+          found that the criterion Q&nbsp;&approx;&nbsp;1 reliably selects the
+          regions where cross-spectrum estimators are valid, while significant
+          deviations indicate that the key assumptions have been violated. This
+          gives astronomers a convenient way to define the scale cuts and redshift
+          ranges over which these reconstructions can be trusted.
         </p>
       </div>
     </section>
