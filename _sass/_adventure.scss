@@ -47,6 +47,13 @@
   grid-column: span 2;
 }
 
+/* Four-photo trips: 2x2. Taller rows keep the wider cells close to the 3:2
+   shape of the photos, so little is lost to cropping. */
+.trip-block--pairs {
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 300px;
+}
+
 /* Override the global `body img` rule, which centres and caps at 600px.
    max-width matters here: the spanning cell is wider than 600px, and without
    this the photo stops short of filling it and leaves a strip of background. */
@@ -93,10 +100,15 @@
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 140px;
   }
+  .trip-block--pairs {
+    grid-auto-rows: 140px;
+  }
   .trip-photo--wide {
     grid-column: auto;
   }
-  .trip-photo:last-of-type {
+  /* Odd photo counts leave a hole in a 2-column grid, so let the last one
+     run full width. An even count already fills. */
+  .trip-block:not(.trip-block--pairs) .trip-photo:last-of-type {
     grid-column: span 2;
   }
   .trip-caption {
