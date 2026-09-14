@@ -51,6 +51,14 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
+/* Uneven 2x2: narrows the right-hand column, which matters when a photo there
+   is much squarer than the wide cells a even split would give it. At 340px a
+   square photo keeps 63% of its height rather than 45%; the cost is the two
+   landscape photos on the left, which drop from 68% to 53%. */
+.trip-block--pairs-offset {
+  grid-template-columns: 1fr 340px;
+}
+
 /* Two-photo trips: side by side, full block height.
 
    The first column is sized so the portrait photo keeps 80% of its height:
