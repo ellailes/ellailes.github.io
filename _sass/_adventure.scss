@@ -52,11 +52,11 @@
 }
 
 /* Per-photo crop nudge. Cells are wider than the photos, so cover crops top
-   and bottom; a centred crop cuts the subject off when it sits low in frame.
-   A smaller percentage shows more of the top of the photo, which pushes the
-   subject down towards the bottom edge of the cell. */
-.trip-photo--low img {
-  object-position: 50% 60%;
+   and bottom. A larger percentage keeps more of the BOTTOM of the photo,
+   which is what you want when the subject sits low in the frame — a centred
+   crop would cut it off at the cell's bottom edge. */
+.trip-photo--focus-bottom img {
+  object-position: 50% 85%;
 }
 
 /* Override the global `body img` rule, which centres and caps at 600px.
@@ -81,7 +81,7 @@
   left: 0;
   bottom: 0;
   margin: 0;
-  padding: 0 20px 2px;
+  padding: 0 20px 6px;
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.3;
