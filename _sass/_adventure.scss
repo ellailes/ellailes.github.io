@@ -53,12 +53,16 @@
 
 /* Two-photo trips: side by side, full block height.
 
-   The second column is sized to the second photo's own 4:3 ratio at this
-   height, so that photo is never cropped horizontally. The first column takes
-   whatever is left — narrower, which means a portrait photo there keeps more
-   of its height (65% rather than the 52% equal columns gave). */
+   The first column is sized so the portrait photo keeps 80% of its height:
+   at 430px tall that needs 430/0.8 of scaled height, times the photo's own
+   1174:2044 ratio. Narrower column = more of the photo survives the crop.
+
+   The second column takes the rest. It stays wider than its photo's 4:3, so
+   that photo is never cropped horizontally — it loses a little top and bottom
+   instead. Both numbers are tied to these two photos; swapping either means
+   recomputing. */
 .trip-block--duo {
-  grid-template-columns: 1fr calc(430px * 4 / 3);
+  grid-template-columns: calc(430px * 1174 / 2044 / 0.8) 1fr;
   grid-auto-rows: 430px;
 }
 
