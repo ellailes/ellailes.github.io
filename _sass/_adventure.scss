@@ -51,11 +51,11 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
-/* One-photo trips: a single full-width cell, two rows tall so the block
-   matches the others. A portrait photo is cropped hard here — pair it with
-   .trip-photo--focus-* to choose which part survives. */
-.trip-block--single {
-  grid-template-columns: 1fr;
+/* Two-photo trips: side by side, full block height. Taller cells than any
+   other layout, which is what lets a portrait photo keep about half its
+   height instead of the quarter a full-width cell would leave. */
+.trip-block--duo {
+  grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: 430px;
 }
 
