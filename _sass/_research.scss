@@ -55,6 +55,13 @@
   margin-top: 0;
 }
 
+.project-links {
+  margin-top: 0.9rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #555;
+}
+
 @media (max-width: $tablet-width) {
   .project {
     display: block;
