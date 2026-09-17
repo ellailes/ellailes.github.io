@@ -70,6 +70,12 @@
     align-items: stretch;
     margin-top: 60px;
   }
+  /* The alternating rule above is more specific than `.project`, so it has to
+     be overridden by name here or the even-numbered project stays a row and
+     its figure overflows the column. */
+  .projects .project:nth-child(even) {
+    flex-direction: column;
+  }
   .project-text {
     order: 1;
   }
